@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Zilla Slab", serif;
+  background-color: #111111;
+  color: #f5f5f5;
+  background: url(/acakim-and-kids.jpg);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -13,4 +22,135 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.imageFade {
+  height: 100vh;
+  background-color: rgba(17, 17, 17, 0.55);
+  position: relative;
+  z-index: 5;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > p {
+  margin-left: 0.5rem;
+  font-style: italic;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+li {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+ul > li:last-child {
+  margin-right: 0;
+}
+
+/* hero */
+
+.hero {
+  background: linear-gradient(180deg, #111111 8.85%, rgba(17, 17, 17, 0) 100%);
+  height: 100vh;
+}
+
+#heroVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.qualifications {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.qualifications > span {
+  margin: 1rem;
+}
+
+/* mobile styles */
+@media screen and (max-width: 575px) {
+  body {
+    background-size: auto;
+    width: 100vw;
+  }
+
+  /* navigation */
+
+  nav {
+    justify-content: space-evenly;
+  }
+
+  .logo > p {
+    display: none;
+  }
+
+  li {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  /* hero */
+
+  .heroText {
+    height: 50vh;
+    margin-top: 5rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .qualifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .qualifications > span {
+    display: none;
+  }
+
+  .qualifications > p {
+    margin: 0.5rem;
+  }
 }
