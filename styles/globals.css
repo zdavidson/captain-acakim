@@ -136,10 +136,11 @@ h1 {
 
 .aboutMe {
   margin: 5rem 0;
-  background: url(/sailing-map-big.png);
+  background: url(/sailing-map-9.png);
   background-size: cover;
-  background-size: 105%;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position-x: right;
   height: 100vh;
 }
 
