@@ -85,12 +85,13 @@ const Home: NextPage = () => {
                     Hi, my name’s Acakim (pronounced Ah-kim) Joseph, I’m an RYA
                     certified captain hailing from the beautiful island of
                     Grenada. I’ve been working on boats for as long as I can
-                    remember, and specialize in navigating beautiful the waters
-                    of the Caribbean. <br></br> <br></br>Whether you’re looking
-                    for someone to bring your boat to your next location, a
-                    professional to give you the charter of a lifetime, or just
-                    an experienced sailor to join you on a voyage and give you a
-                    few pointers, I’m your guy. You can reach me at:{" "}
+                    remember, and I specialize in navigating beautiful the
+                    waters of the Caribbean. <br></br> <br></br>Whether you’re
+                    looking for someone to bring your boat to your next
+                    location, a professional to give you the charter of a
+                    lifetime, or just an experienced sailor to join you on a
+                    voyage and give you a few pointers - I’m your captain. You
+                    can reach me at:{" "}
                     <span>
                       <a
                         href="mailto:acakimj.zjoseph@gmail.com"
@@ -100,7 +101,12 @@ const Home: NextPage = () => {
                       </a>
                     </span>{" "}
                     <br></br>
-                    <br></br>I look forward to hearing from you!
+                    <br></br>I look forward to hearing from you!<br></br>
+                    <br></br>
+                    <span style={{ fontStyle: "italic", float: "right" }}>
+                      {" "}
+                      - Acakim
+                    </span>
                   </p>
                 </div>
                 <div className="aboutImage">

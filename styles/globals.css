@@ -163,6 +163,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+.aboutText > p > span:first-of-type {
+  font-weight: 700;
+}
+
 .aboutImage {
   flex: 1;
   object-fit: contain;
@@ -179,6 +183,14 @@ h1 {
   body {
     background-size: auto;
     width: 100vw;
+  }
+
+  .imageFade {
+    height: 65vh;
+  }
+
+  .imageFade:last-child {
+    height: 100vh;
   }
 
   /* navigation */
@@ -198,27 +210,57 @@ h1 {
 
   /* hero */
 
+  .hero {
+    height: 65vh;
+  }
+
+  #heroVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 65vh;
+    width: auto;
+  }
+
   .heroText {
     height: 50vh;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 
   h1 {
     margin-bottom: 1rem;
+    font-size: 2.5rem;
   }
 
   .qualifications {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: 700;
+    line-height: 0.5rem;
+    margin-top: 2rem;
   }
   .qualifications > span {
-    display: none;
+    /* display: none; */
+    transform: rotate(90deg);
   }
 
   .qualifications > p {
     margin: 0.5rem;
+  }
+
+  /* about me */
+  .aboutMe {
+    margin: 0;
+    background-size: cover;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutText {
+    margin-right: 0;
   }
 }
