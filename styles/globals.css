@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Zilla Slab", serif;
   background-color: #111111;
+  /* background-color: white; */
   color: #f5f5f5;
   /* background: url(/acakim-and-kids.jpg); */
   background-size: cover;
@@ -25,11 +26,32 @@ a {
 }
 
 .imageFade {
-  height: 100vh;
+  height: 105vh;
   background-color: rgba(17, 17, 17, 0.55);
   position: relative;
   z-index: 5;
 }
+
+/* horizontal divider */
+/* 
+.horizontalDivider {
+  height: 20rem;
+  position: absolute;
+  width: 100vw;
+}
+
+.topHalf {
+  background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+  height: 20rem;
+  width: 100vw;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bottomHalf {
+  background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+  height: 20rem;
+  width: 100vw;
+} */
 
 /* navigation */
 
@@ -61,6 +83,10 @@ li {
   margin-right: 2rem;
 }
 
+li:hover {
+  color: #111111;
+}
+
 ul > li:last-child {
   margin-right: 0;
 }
@@ -73,11 +99,10 @@ ul > li:last-child {
 }
 
 #heroVideo {
-  position: fixed;
+  position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
 }
 
 .heroText {
@@ -106,6 +131,47 @@ h1 {
 .qualifications > span {
   margin: 1rem;
 }
+
+/* about me */
+
+.aboutMe {
+  margin: 5rem 0;
+  background: url(/sailing-map-big.png);
+  background-size: cover;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+}
+
+.aboutText {
+  flex: 1;
+  margin-right: 10rem;
+  line-height: 1.75rem;
+}
+
+.aboutText > h2 {
+  font-size: 3rem;
+}
+
+.aboutText > p {
+  font-size: 1.5rem;
+}
+
+.aboutImage {
+  flex: 1;
+  object-fit: contain;
+  position: relative;
+  margin: 5rem 0;
+}
+
+/* #aboutImage {
+  object-fit: contain;
+} */
 
 /* mobile styles */
 @media screen and (max-width: 575px) {

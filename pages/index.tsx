@@ -43,15 +43,19 @@ const Home: NextPage = () => {
                   <p>Acakim Joseph</p>
                 </div>
                 <ul>
-                  <li>About Me</li>
-                  <li>Voyages</li>
                   <li>
-                    <Button
-                      sx={{
-                        fontSize: "2rem",
-                      }}
-                      text="Contact"
-                    />
+                    <a href="#aboutMe">About Me</a>
+                  </li>
+                  {/* <li>Voyages</li> */}
+                  <li>
+                    <a href="mailto:acakimj.zjoseph@gmail.com">
+                      <Button
+                        sx={{
+                          fontSize: "2rem",
+                        }}
+                        text="Contact"
+                      />
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -59,10 +63,60 @@ const Home: NextPage = () => {
                 <h1>Captain Joseph</h1>
                 <div className="qualifications">
                   <p>RYA Certified</p> <span>|</span>
-                  <p>15+ years of experience</p>
+                  <p>10+ years of experience</p>
                   <span>|</span> <p>10,000+ nautical miles</p>
                 </div>
-                <Button sx={watchButtonProps} text="Watch" />
+                {/* <Button sx={watchButtonProps} text="Watch" /> */}
+              </div>
+            </Container>
+          </div>
+        </div>
+        {/* <div className="horizontalDivider">
+          <div className="topHalf" />
+          <div className="bottomHalf" />
+        </div> */}
+        <div id="aboutMe" className="aboutMe">
+          <div className="imageFade">
+            <Container maxWidth="lg">
+              <div className="aboutContainer">
+                <div className="aboutText">
+                  <h2>About Me</h2>
+                  <p>
+                    Hi, my name’s Acakim (pronounced Ah-kim) Joseph, I’m an RYA
+                    certified captain hailing from the beautiful island of
+                    Grenada. I’ve been working on boats for as long as I can
+                    remember, and specialize in navigating beautiful the waters
+                    of the Caribbean. <br></br> <br></br>Whether you’re looking
+                    for someone to bring your boat to your next location, a
+                    professional to give you the charter of a lifetime, or just
+                    an experienced sailor to join you on a voyage and give you a
+                    few pointers, I’m your guy. You can reach me at:{" "}
+                    <span>
+                      <a
+                        href="mailto:acakimj.zjoseph@gmail.com"
+                        style={{ textDecoration: "underline" }}
+                      >
+                        acakimj.zjoseph@gmail.com
+                      </a>
+                    </span>{" "}
+                    <br></br>
+                    <br></br>I look forward to hearing from you!
+                  </p>
+                </div>
+                <div className="aboutImage">
+                  <Image
+                    id="aboutImage"
+                    src="/acakim.jpg"
+                    alt="sailing"
+                    height="665px"
+                    width="443px"
+                    // layout="fill"
+                    // height="50vh"
+                    // width="100%"
+                    // height="700px"
+                    // width="500px"
+                  />
+                </div>
               </div>
             </Container>
           </div>
