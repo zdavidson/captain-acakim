@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                     Hi, my name’s Acakim (pronounced Ah-kim) Joseph, I’m an RYA
                     certified captain hailing from the beautiful island of
                     Grenada. I’ve been working on boats for as long as I can
-                    remember, and I specialize in navigating beautiful the
+                    remember, and I specialize in navigating the beautiful
                     waters of the Caribbean. <br></br> <br></br>Whether you’re
                     looking for someone to bring your boat to your next
                     location, a professional to give you the charter of a
