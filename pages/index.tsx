@@ -17,10 +17,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Captain Joseph</title>
+        <title>Captain Acakim Joseph</title>
         <meta
           name="description"
-          content="Captain Joseph, Caribbean RYA Certified yacht captain. Located in St. Georges, Grenada."
+          content="Captain Acakim Joseph, Caribbean RYA Certified yacht captain. Located in St. Georges, Grenada."
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
                 </ul>
               </nav>
               <div className="heroText">
-                <h1>Captain Joseph</h1>
+                <h1>Captain Acakim</h1>
                 <div className="qualifications">
                   <p>RYA Certified</p> <span>|</span>
                   <p>10+ years of experience</p>
