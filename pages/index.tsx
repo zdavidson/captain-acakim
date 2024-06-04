@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 <div className="qualifications">
                   <p>RYA Certified</p> <span>|</span>
                   <p>10+ years of experience</p>
-                  <span>|</span> <p>10,000+ nautical miles</p>
+                  <span>|</span> <p>2,000+ nautical miles</p>
                 </div>
                 {/* <Button sx={watchButtonProps} text="Watch" /> */}
               </div>
